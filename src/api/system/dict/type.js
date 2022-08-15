@@ -17,6 +17,15 @@ export function getType(dictId) {
   })
 }
 
+// 查询字典树
+export function treeList(query) {
+  return request({
+    url: '/system/dict/type/tree',
+    method: 'get',
+    params: query
+  })
+}
+
 // 新增字典类型
 export function addType(data) {
   return request({
